@@ -1,0 +1,18 @@
+package cine.config;
+
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.info.Info;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
+@Configuration
+@EnableJpaRepositories(basePackages = "cine.repositorios.repositorioJPA")
+@OpenAPIDefinition(
+        info = @Info(
+                title = "PruebaCineMaven",
+                version = "1.0",
+                description = "Documentación de la API de gestión de productos"
+        )
+)
+public class OpenApiConfig { }
