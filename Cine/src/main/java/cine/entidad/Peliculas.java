@@ -24,7 +24,7 @@ public class Peliculas {
     private boolean activa;
     private LocalDate fecha_baja;
 
-    @OneToMany(mappedBy = "id_peliculafk")
+    @OneToMany(mappedBy = "id_peliculaFK")
     private List<Proyecciones> proyecciones;
 
     public Peliculas() {}
