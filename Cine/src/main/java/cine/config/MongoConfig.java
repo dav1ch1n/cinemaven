@@ -8,7 +8,8 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 import java.util.Arrays;
 import java.util.List;
-
+// En esta configuración, cada vez que arrancamos la aplicacion vemos si las tablas no están creadas
+// y si no, las crea.
 @Configuration // 1. Indica que esta clase es de configuración
 @EnableMongoRepositories(basePackages = "cine.repositorios.repositorioMongo")
 public class MongoConfig {

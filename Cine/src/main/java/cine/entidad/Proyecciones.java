@@ -1,26 +1,39 @@
 package cine.entidad;
 
-import org.springframework.data.mongodb.core.mapping.Document;
+
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
+import com.fasterxml.jackson.annotation.*;
 
 @Entity
-@Document(collection = "proyecciones")
 @Table(name="proyecciones")
 public class Proyecciones {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     Long id_proyeccion;
-    int id_peliculaFK;
-    int id_salaFK;
+    @ManyToOne
+    @JoinColumn(name = "id_peliculafk")
+    @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id_pelicula") // Asegúrate que en Peliculas el ID se llame así
+    @JsonIdentityReference(alwaysAsId = true)
+    Peliculas id_peliculaFK;
+
+    @ManyToOne
+    @JoinColumn(name = "id_salafk")
+    @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id_sala") // Asegúrate que en Salas el ID se llame así
+    @JsonIdentityReference(alwaysAsId = true)
+    Salas id_salaFK;
+
     LocalDateTime fecha_hora_inicio;
     LocalDateTime fecha_hora_fin;
     double precio_entrada;
     int asientos_disponibles;
+    @OneToMany(mappedBy = "id_proyeccionfk")
+    List<Entradas> entradas;
 
     public Proyecciones() {}
 
-    public Proyecciones(Long id_proyeccion, int id_peliculaFK, int id_salaFK, LocalDateTime fecha_hora_inicio, LocalDateTime fecha_hora_fin, double precio_entrada, int asientos_disponibles) {
+    public Proyecciones(Long id_proyeccion, Peliculas id_peliculaFK, Salas id_salaFK, LocalDateTime fecha_hora_inicio, LocalDateTime fecha_hora_fin, double precio_entrada, int asientos_disponibles) {
         this.id_proyeccion = id_proyeccion;
         this.id_peliculaFK = id_peliculaFK;
         this.id_salaFK = id_salaFK;
@@ -37,17 +50,17 @@ public class Proyecciones {
         this.id_proyeccion = id_proyeccion;
     }
 
-    public int getId_peliculaFK() {
+    public Peliculas getId_peliculaFK() {
         return id_peliculaFK;
     }
-    public void setId_peliculaFK(int id_peliculaFK) {
+    public void setId_peliculaFK(Peliculas id_peliculaFK) {
         this.id_peliculaFK = id_peliculaFK;
     }
 
-    public int getId_salaFK() {
+    public Salas getId_salaFK() {
         return id_salaFK;
     }
-    public void setId_salaFK(int id_salaFK) {
+    public void setId_salaFK(Salas id_salaFK) {
         this.id_salaFK = id_salaFK;
     }
 

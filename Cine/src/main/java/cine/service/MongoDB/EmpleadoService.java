@@ -1,4 +1,4 @@
-package cine.service;
+package cine.service.MongoDB;
 import cine.entidad.Empleado;
 import cine.repositorios.repositorioMongo.EmpleadoRepositorioMongo;
 
@@ -9,15 +9,11 @@ import java.util.List;
 
 @Service
 public class EmpleadoService {
-    //bean: empleadoRepositorio
-    //silguenton: es un objeto instanciado, y solo se instancia una vez. Rompe toda la estructura de objetos
-    //opcional: es un objeto que instacia java automaticamente, para que no devuelva un null.
+   // El service de mongo es igual que el de JPA, lo unico que cambia es el repositorio que se inyecta, y el tipo de dato del id,
+   // que en mongo es String y en JPA es Long.
     @Autowired
-    /*@Autowired es una anotación de Spring que sirve para inyectar dependencias automáticamente.
-    Es decir: Spring crea los objetos por ti y te los entrega listos para usar,
-    sin que tengas que hacer new.*/
     private EmpleadoRepositorioMongo empleadoRepositorioMongo;
-    public Empleado getOne(Long id) {
+    public Empleado getOne(String id) {
         //Save se encarga de registra los datos.
         return empleadoRepositorioMongo.findById(id).orElse(null);
     }
@@ -25,11 +21,11 @@ public class EmpleadoService {
         return empleadoRepositorioMongo.findAll();
     }
 
-    public Empleado update(Long id, Empleado obj) {
+    public Empleado update(String id, Empleado obj) {
         return empleadoRepositorioMongo.save(obj);
     }
 
-    public void delete(Long id) {
+    public void delete(String id) {
         empleadoRepositorioMongo.deleteById(id);
     }
 

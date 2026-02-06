@@ -3,8 +3,10 @@ package cine.entidad;
 import org.springframework.data.mongodb.core.mapping.Document;
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
-@Document(collection = "salas")
+//@Document(collection = "salas")
 @Table(name="salas")
 public class Salas {
     @Id
@@ -15,6 +17,11 @@ public class Salas {
     String tipo_sala;
     String calidad_sonido;
     Boolean activa;
+    @OneToMany(mappedBy = "id_salaFK")
+    private List<Entradas> entradas;
+
+    @OneToMany(mappedBy = "id_salaFK")
+    private List<Proyecciones> proyecciones;
 
     public Salas(){}
     public Salas(Long id_sala, String nombre_sala, int capacidad, String tipo_sala, String calidad_sonido, Boolean activa) {

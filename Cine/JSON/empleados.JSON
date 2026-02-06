@@ -1,0 +1,232 @@
+[
+  {
+    "nombre": "Carlos Mendoza",
+    "puesto": "Gerente",
+    "tipo_jornada": "Jornada completa",
+    "email": "carlos_mendoza@gmail.com",
+    "telefono": 111222333,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 16,
+    "activo": "true"
+  },
+  {
+    "nombre": "Ana Rodríguez",
+    "puesto": "Subgerente",
+    "tipo_jornada": "Jornada completa",
+    "email": "ana_rodriguez@gmail.com",
+    "telefono": 111222444,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 14,
+    "activo": "true"
+  },
+  {
+    "nombre": "Baja",
+    "puesto": "Baja",
+    "tipo_jornada": "Baja",
+    "email": "baja@gmail.com",
+    "telefono": 111222555,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 0,
+    "activo": "false"
+  },
+  {
+    "nombre": "Baja",
+    "puesto": "Baja",
+    "tipo_jornada": "Baja",
+    "email": "baja@gmail.com",
+    "telefono": 111222666,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 0,
+    "activo": "false"
+  },
+  {
+    "nombre": "Miguel Torres",
+    "puesto": "Proyeccionista Jefe",
+    "tipo_jornada": "Jornada completa",
+    "email": "miguel_torres@gmail.com",
+    "telefono": 111222777,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 14.5,
+    "activo": "true"
+  },
+  {
+    "nombre": "Sofia García",
+    "puesto": "Proyeccionista",
+    "tipo_jornada": "Jornada completa",
+    "email": "sofia_garcia@gmail.com",
+    "telefono": 111222888,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 13,
+    "activo": "true"
+  },
+  {
+    "nombre": "Baja",
+    "puesto": "Baja",
+    "tipo_jornada": "Baja",
+    "email": "Baja@gmail.com",
+    "telefono": 111222999,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 0,
+    "activo": "false"
+  },
+  {
+    "nombre": "Baja",
+    "puesto": "Baja",
+    "tipo_jornada": "Baja",
+    "email": "Baja@gmail.com",
+    "telefono": 111333333,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 0,
+    "activo": "false"
+  },
+  {
+    "nombre": "María González",
+    "puesto": "Taquillero",
+    "tipo_jornada": "Jornada completa",
+    "email": "maria_gonzalez@gmail.com",
+    "telefono": 111444333,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 12.5,
+    "activo": "true"
+  },
+  {
+    "nombre": "Pedro Sánchez",
+    "puesto": "Cajero",
+    "tipo_jornada": "Jornada completa",
+    "email": "pedro_sanchez@gmail.com",
+    "telefono": 111555333,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 12.5,
+    "activo": "true"
+  },
+  {
+    "nombre": "Carmen Vargas",
+    "puesto": "Taquillero",
+    "tipo_jornada": "Jornada partida",
+    "email": "carme_vegas@gmail.com",
+    "telefono": 111555333,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 12.5,
+    "activo": "true"
+  },
+  {
+    "nombre": "Raúl Jiménez",
+    "puesto": "Cajero",
+    "tipo_jornada": "Jornada partida",
+    "email": "raul_jimenez@gmail.com",
+    "telefono": 111666333,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 12.5,
+    "activo": "true"
+  },
+  {
+    "nombre": "Andrea Molina",
+    "puesto": "Atención Cliente",
+    "tipo_jornada": "Jornada completa",
+    "email": "andrea_molina@gmail.com",
+    "telefono": 111777333,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 11.5,
+    "activo": "true"
+  },
+  {
+    "nombre": "Roberto Díaz",
+    "puesto": "Atención Cliente",
+    "tipo_jornada": "Jornada partida",
+    "email": "roberto_diaz@gmail.com",
+    "telefono": 111888333,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 11.5,
+    "activo": "true"
+  },
+  {
+    "nombre": "Patricia Ortega",
+    "puesto": "Atención Cliente",
+    "tipo_jornada": "Jornada partida",
+    "email": "patricia_ortega@gmail.com",
+    "telefono": 111999333,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 11.5,
+    "activo": "true"
+  },
+  {
+    "nombre": "Francisco Reyes",
+    "puesto": "Limpieza",
+    "tipo_jornada": "Jornada completa",
+    "email": "francisco_reyes@gmail.com",
+    "telefono": 222222333,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 12,
+    "activo": "true"
+  },
+  {
+    "nombre": "Teresa Herrera",
+    "puesto": "Limpieza",
+    "tipo_jornada": "Jornada completa",
+    "email": "teresa_herrera@gmail.com",
+    "telefono": 333222333,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 12,
+    "activo": "true"
+  },
+  {
+    "nombre": "Eva Navarro",
+    "puesto": "Limpieza",
+    "tipo_jornada": "Jornada completa",
+    "email": "eva_navarro@gmail.com",
+    "telefono": 444222333,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 12,
+    "activo": "true"
+  },
+  {
+    "nombre": "Alberto Silva",
+    "puesto": "Limpieza",
+    "tipo_jornada": "Jornada partida",
+    "email": "alberto_silva@gmail.com",
+    "telefono": 555222333,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 12,
+    "activo": "true"
+  },
+  {
+    "nombre": "Baja",
+    "puesto": "Baja",
+    "tipo_jornada": "Baja",
+    "email": "Baja@gmail.com",
+    "telefono": 666222333,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 0,
+    "activo": "false"
+  },
+  {
+    "nombre": "Baja",
+    "puesto": "Baja",
+    "tipo_jornada": "Baja",
+    "email": "Baja@gmail.com",
+    "telefono": 777222333,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 0,
+    "activo": "false"
+  },
+  {
+    "nombre": "Jorge Martín",
+    "puesto": "Seguridad",
+    "tipo_jornada": "Jornada completa",
+    "email": "jorge_martin@gmail.com",
+    "telefono": 888222333,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 14.5,
+    "activo": "true"
+  },
+  {
+    "nombre": "Sara López",
+    "puesto": "Seguridad",
+    "tipo_jornada": "Jornada completa",
+    "email": "sara_lopez@gmail.com",
+    "telefono": 999222333,
+    "fecha_contratacion": "2020-01-01",
+    "salario_hora": 14,
+    "activo": "true"
+  }
+]

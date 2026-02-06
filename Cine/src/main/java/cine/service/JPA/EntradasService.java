@@ -1,17 +1,19 @@
-package cine.service;
+package cine.service.JPA;
 
 import cine.entidad.Entradas;
-import cine.repositorios.repositorioMongo.EntradasRepositorioMongo;
+import cine.repositorios.repositorioJPA.EntradasRepositorioJPA;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+// lo que hago es separar los service que usan JPA de los que usan MongoDB, para tener un mejor orden.
+// como solo empleados es lo que se pone en mongoDB, es la única que estará en esa carpeta
+// el resto estrán en esta carpeta de JPA.
 @Service
 public class EntradasService {
 @Autowired
-    private EntradasRepositorioMongo entRepositorio;
+    private EntradasRepositorioJPA entRepositorio;
     public Entradas getOne(Long id) {
         return entRepositorio.findById(id).orElse(null);
     }

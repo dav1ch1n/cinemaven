@@ -6,6 +6,8 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
+// Esta clase configura la documentación de la API usando OpenAPI (Swagger)
+// y también habilita los repositorios JPA para la parte de gestión de productos.
 @Configuration
 @EnableJpaRepositories(basePackages = "cine.repositorios.repositorioJPA")
 @OpenAPIDefinition(

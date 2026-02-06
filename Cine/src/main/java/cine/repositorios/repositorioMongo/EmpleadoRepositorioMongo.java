@@ -14,4 +14,4 @@ import org.springframework.stereotype.Repository;
 // - deleteById(id) → borrar un usuario
 // No es necesario escribir código adicional para CRUD básico.
 @Repository
-public interface EmpleadoRepositorioMongo extends MongoRepository<Empleado, Long>{}
+public interface EmpleadoRepositorioMongo extends MongoRepository<Empleado, String>{}

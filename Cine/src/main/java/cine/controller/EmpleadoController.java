@@ -1,7 +1,7 @@
 package cine.controller;
 
 import cine.entidad.Empleado;
-import cine.service.EmpleadoService;
+import cine.service.MongoDB.EmpleadoService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,7 +13,7 @@ PATCH: Actualizar parcialmente toda la colección	PATCH /usuarios
 DELETE: Borrar toda la colección	DELETE /usuarios*/
 
 @RestController
-@RequestMapping("cines/entidad/Empleado")
+@RequestMapping("cine/entidad/Empleado")
 public class EmpleadoController {
     private final EmpleadoService EmpService;
     public EmpleadoController(EmpleadoService empService) {
@@ -24,7 +24,7 @@ public class EmpleadoController {
         return EmpService.getAll();
     }
     @GetMapping("/{id}")
-    public Empleado getById(@PathVariable Long id) {
+    public Empleado getById(@PathVariable String id) {
         return EmpService.getOne(id);
     }
     @PostMapping
@@ -32,11 +32,11 @@ public class EmpleadoController {
         return EmpService.insert(emp);
     }
     @PutMapping("/{id}")
-    public Empleado update(@PathVariable Long id, @RequestBody Empleado emp) {
+    public Empleado update(@PathVariable String id, @RequestBody Empleado emp) {
         return EmpService.update(id, emp);
     }
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable Long id) {
+    public void delete(@PathVariable String id) {
         EmpService.delete(id);
     }
 }

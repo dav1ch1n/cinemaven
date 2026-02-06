@@ -1,7 +1,7 @@
-package cine.service;
+package cine.service.JPA;
 
 import cine.entidad.Peliculas;
-import cine.repositorios.repositorioMongo.PeliculasRepositorioMongo;
+import cine.repositorios.repositorioJPA.PeliculasRepositorioJPA;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 public class PeliculasService {
     @Autowired
-    private PeliculasRepositorioMongo peliRepository;
+    private PeliculasRepositorioJPA peliRepository;
     public Peliculas getOne(Long id) {
         return peliRepository.findById(id).orElse(null);
     }

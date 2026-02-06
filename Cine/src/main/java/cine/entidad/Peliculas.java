@@ -4,9 +4,10 @@ import jakarta.persistence.*;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
-@Document(collection = "peliculas")
+//@Document(collection = "peliculas")
 @Table(name="peliculas")
 public class Peliculas {
     @Id
@@ -22,6 +23,9 @@ public class Peliculas {
     private int popularidad;
     private boolean activa;
     private LocalDate fecha_baja;
+
+    @OneToMany(mappedBy = "id_peliculafk")
+    private List<Proyecciones> proyecciones;
 
     public Peliculas() {}
     public Peliculas(Long id_pelicula, String titulo, int duracion_minutos, String genero, String clasificacion, String director, String sinopsis, LocalDate fecha_estreno, int popularidad, boolean activa, LocalDate fecha_baja) {

@@ -1,11 +1,11 @@
 package cine.controller;
 import cine.entidad.Salas;
-import cine.service.SalasService;
+import cine.service.JPA.SalasService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 @RestController
-@RequestMapping("cines/entidad/Salas")
+@RequestMapping("cine/entidad/Salas")
 public class SalasController {
     private final SalasService salasService;
 

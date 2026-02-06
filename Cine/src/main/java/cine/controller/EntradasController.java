@@ -1,12 +1,12 @@
 package cine.controller;
 
 import cine.entidad.Entradas;
-import cine.service.EntradasService;
+import cine.service.JPA.EntradasService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 @RestController
-@RequestMapping("cines/entidad/Entradas")
+@RequestMapping("cine/entidad/Entradas")
 public class EntradasController {
     private final EntradasService entService;
     public EntradasController(EntradasService entService) {
